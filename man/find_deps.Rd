@@ -4,9 +4,11 @@
 \alias{find_deps}
 \title{Get all functions needed for a given function}
 \usage{
-find_deps(fxns)
+find_deps(x, fxns)
 }
 \arguments{
+\item{x}{an object of class function_map}
+
 \item{fxns}{One or more functions. required.}
 }
 \value{
@@ -17,7 +19,8 @@ Get all functions needed for a given function
 }
 \examples{
 \dontrun{
-find_deps(...)
+res <- scattalyze("../rredlist")
+find_deps(res, fxns = "rl_citation")
 }
 }
 
