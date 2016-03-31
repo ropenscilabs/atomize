@@ -1,0 +1,13 @@
+atomize
+=======
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(
+  warning = FALSE,
+  message = FALSE,
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+[![Build Status](https://travis-ci.org/ropenscilabs/atomize.svg?branch=master)](https://travis-ci.org/ropenscilabs/atomize)

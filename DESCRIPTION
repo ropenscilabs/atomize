@@ -1,0 +1,13 @@
+Package: atomize
+Type: Package
+Title: Scatter Functions into New Packages
+Description: Scatter Functions into New Packages.
+Version: 0.0.1.9000
+Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
+    email = "myrmecocystus@gmail.com"))
+License: MIT + file LICENSE
+URL: https://github.com/ropenscilabs/atomize
+BugReports: https://github.com/ropenscilabs/atomize/issues
+Imports:
+    functionMap
+RoxygenNote: 5.0.1
