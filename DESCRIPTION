@@ -9,5 +9,6 @@ License: MIT + file LICENSE
 URL: https://github.com/ropenscilabs/atomize
 BugReports: https://github.com/ropenscilabs/atomize/issues
 Imports:
-    functionMap
+    functionMap,
+    devtools
 RoxygenNote: 5.0.1
