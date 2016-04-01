@@ -11,3 +11,37 @@ knitr::opts_chunk$set(
 ```
 
 [![Build Status](https://travis-ci.org/ropenscilabs/atomize.svg?branch=master)](https://travis-ci.org/ropenscilabs/atomize)
+
+```{r eval=FALSE}
+devtools::install_github("ropenscilabs/atomize")
+```
+
+```{r}
+library("atomize")
+```
+
+atomize fxns into separate package
+
+```{r eval=FALSE}
+atomizer(path_ref = "../rredlist", path_new = "../foobar", funcs = "rl_citation")
+```
+
+install
+
+```{r eval=FALSE}
+devtools::install("../foobar")
+```
+
+load
+
+```{r}
+library("foobar")
+```
+
+call function
+
+```{r}
+foobar::rl_citation()
+```
+
+boom! atomized

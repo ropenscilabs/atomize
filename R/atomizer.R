@@ -5,7 +5,10 @@
 #' @param path_new path to new package, end of path is pkg name
 #' @param funcs function(s) to extract
 #' @examples \dontrun{
-#' atomizer("../foobar")
+#' atomizer(path_ref = "../rredlist", path_new = "../foobar", funcs = "rl_citation")
+#' devtools::install("../foobar")
+#' library("foobar")
+#' foobar::rl_citation()
 #' }
 atomizer <- function(path_ref, path_new, funcs) {
   res <- scattalyze(path_ref)

@@ -18,7 +18,10 @@ atomizer
 }
 \examples{
 \dontrun{
-atomizer("../foobar")
+atomizer(path_ref = "../rredlist", path_new = "../foobar", funcs = "rl_citation")
+devtools::install("../foobar")
+library("foobar")
+foobar::rl_citation()
 }
 }
 

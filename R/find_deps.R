@@ -20,6 +20,7 @@ find_deps.default <- function(x, fxns) {
 
 #' @export
 find_deps.function_map <- function(x, fxns) {
+  orgfxns <- fxns
   z <- FALSE
   fxn_coll <- c()
   while (!z) {
@@ -29,5 +30,5 @@ find_deps.function_map <- function(x, fxns) {
     z <- is.null(fxns)
     if (!z) fxn_coll <- c(fxn_coll, fxns)
   }
-  return(fxn_coll)
+  c(orgfxns, fxn_coll)
 }
