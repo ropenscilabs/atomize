@@ -24,4 +24,3 @@ library("foobar")
 foobar::rl_citation()
 }
 }
-

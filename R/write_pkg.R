@@ -14,9 +14,8 @@
 #' write_pkg(path = "../stuff", fxns = g, imports = xx)
 #' }
 write_pkg <- function(path, fxns, imports, ...) {
-  # devtools::create(path, ...)
-  pkg <- devtools::create(path)
-  if (pkg) {
+  pkg <- usethis::create_package(path, open = FALSE)
+  if (inherits(pkg, "fs_path") && dir.exists(pkg)) {
     pkn <- basename(path)
 
     pkgmanfile <- sprintf("#' %s

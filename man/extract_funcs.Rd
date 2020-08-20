@@ -24,4 +24,3 @@ res <- scattalyze("../rredlist")
 extract_funcs(path="../rredlist", funcs)
 }
 }
-

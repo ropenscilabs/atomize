@@ -25,4 +25,3 @@ extract_funcs(path="../rredlist", funcs)
 get_imports(path="../rredlist", funcs)
 }
 }
-

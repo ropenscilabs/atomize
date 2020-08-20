@@ -10,38 +10,43 @@ knitr::opts_chunk$set(
 )
 ```
 
-[![Build Status](https://travis-ci.org/ropenscilabs/atomize.svg?branch=master)](https://travis-ci.org/ropenscilabs/atomize)
+[![Build Status](https://travis-ci.org/sckott/atomize.svg?branch=master)](https://travis-ci.org/sckott/atomize)
 
 ```{r eval=FALSE}
-devtools::install_github("ropenscilabs/atomize")
+devtools::install_github("sckott/atomize")
 ```
 
-```{r}
+```{r eval=FALSE}
 library("atomize")
 ```
 
 atomize fxns into separate package
 
 ```{r eval=FALSE}
-atomizer(path_ref = "../rredlist", path_new = "../foobar", funcs = "rl_citation")
+download.file("https://cloud.r-project.org/src/contrib/cowsay_0.8.0.tar.gz",
+  "cowsay_0.8.0.tar.gz")
+untar("cowsay_0.8.0.tar.gz", exdir = tempdir())
+path <- file.path(tempdir(), "cowsay")
+path2 <- file.path(tempdir(), "goatsay")
+atomizer(path_ref = path, path_new = path2, funcs = "say")
 ```
 
 install
 
 ```{r eval=FALSE}
-devtools::install("../foobar")
+devtools::install(path2)
 ```
 
 load
 
-```{r}
-library("foobar")
+```{r eval=FALSE}
+library("goatsay")
 ```
 
 call function
 
-```{r}
-foobar::rl_citation()
+```{r eval=FALSE}
+goatsay::say()
 ```
 
 boom! atomized

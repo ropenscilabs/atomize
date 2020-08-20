@@ -24,4 +24,3 @@ res <- scattalyze("../rredlist")
 
 }
 }
-

@@ -2,14 +2,10 @@
 % Please edit documentation in R/atomize-package.R
 \docType{package}
 \name{atomize-package}
-\alias{atomize}
 \alias{atomize-package}
+\alias{atomize}
 \title{atomize}
 \description{
-atomize
-}
-\author{
-Scott Chamberlain \email{myrmecocystus@gmail.com}
+Scatter functions into new packages
 }
 \keyword{package}
-
